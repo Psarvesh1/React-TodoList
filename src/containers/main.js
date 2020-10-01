@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import Tasky from './todotask'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee, faHeart } from "@fortawesome/free-solid-svg-icons";
 
 class Main extends Component {
   render () {
@@ -17,9 +19,17 @@ class Main extends Component {
               </ul>
             </div>
           </nav>
+          
           <Switch>
             <Route exact path='/' component={Tasky} />
           </Switch>
+          <div className="footer">
+      <p>
+        This site is made with <FontAwesomeIcon icon={faCoffee} /> &{" "}
+        <FontAwesomeIcon icon={faHeart} /> by{" "}
+        <a target = "_blank" rel="noopener noreferrer" href="https://github.com/Psarvesh1">Sarvesh Parab</a>.
+      </p>
+    </div>
         </div>
       </Router>
     )

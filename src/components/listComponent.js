@@ -27,7 +27,7 @@ class ListComponent extends Component {
                         <h4>{title} {"  "}<small>{content}</small></h4>
                     </div>
                     <div className={'col-sm-2'}>
-                        <h4><FormLabel bsStyle={(categories==='High')?"danger":(categories==='Medium')?"primary":"warning"}>{categories}</FormLabel></h4>
+                        <h4><FormLabel bsstyle={(categories==='High')?"danger":(categories==='Medium')?"primary":"warning"}>{categories}</FormLabel></h4>
                     </div>
 
                     <div className={'col-sm-1'} onClick={()=>{this.setState({ show: true })}}>
